@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Avesta\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Avesta\\.nuget\\packages"
+    ]
+  }
+}
