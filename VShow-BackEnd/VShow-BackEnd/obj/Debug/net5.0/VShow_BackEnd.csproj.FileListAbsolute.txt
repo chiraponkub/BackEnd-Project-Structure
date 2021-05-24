@@ -70,3 +70,6 @@ C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow-BackEnd\obj\Debug
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow-BackEnd\obj\Debug\net5.0\ref\VShow_BackEnd.dll
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow-BackEnd\obj\Debug\net5.0\VShow_BackEnd.pdb
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow-BackEnd\obj\Debug\net5.0\VShow_BackEnd.genruntimeconfig.cache
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow-BackEnd\bin\Debug\net5.0\MailKit.dll
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow-BackEnd\bin\Debug\net5.0\MimeKit.dll
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow-BackEnd\bin\Debug\net5.0\BouncyCastle.Crypto.dll

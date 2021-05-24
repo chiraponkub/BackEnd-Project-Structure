@@ -1,0 +1,40 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "Vshow_DevContext",
+   "ContextNamespace": "Entity",
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Entity",
+   "OutputPath": "Entity\/Tables",
+   "ProceduresReturnList": false,
+   "ProjectRootNamespace": "VShow_CoreLibs",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[AccountProvider]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserProfile]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "WIN-PBEOAFMTFJH.VShow_Dev",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSpatial": false
+}

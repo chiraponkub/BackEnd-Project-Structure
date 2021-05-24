@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using VShow_CoreLibs.Entity.Tables;
 
 namespace VShow_BackEnd.Entity
 {
@@ -7,6 +8,7 @@ namespace VShow_BackEnd.Entity
     /// </summary>
     public partial class DBConnect : DbContext
     {
-
+        public virtual DbSet<AccountProvider> AccountProvider { get; set; }
+        public virtual DbSet<UserProfile> UserProfile { get; set; }
     }
 }

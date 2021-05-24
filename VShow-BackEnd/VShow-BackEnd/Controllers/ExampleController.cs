@@ -21,14 +21,18 @@ namespace VShow_BackEnd.Controllers
             hashSerucityService = hash;
         }
 
+        public class m_Login
+        {
+            public string username { get; set; }
+            public string password { get; set; }
+        }
+
         /// <summary>
         /// เข้าสู่ระบบ
         /// </summary>
-        /// <param name="username">bell</param>
-        /// <param name="password">123456</param>
         /// <returns></returns>
-        [HttpPost("signin/{username}/{password}")]
-        public IActionResult Login(string username, string password)
+        [HttpPost("signin")]
+        public IActionResult Login(m_Login req)
         {
             try
             {
@@ -39,7 +43,7 @@ namespace VShow_BackEnd.Controllers
                 Guid userID = new Guid(guid);
                 string user = "bell";
                 string pass = "123456";
-                if (user == username && pass == password)
+                if (user == req.username && pass == req.password)
                 {
                     return OkAuthentication("SignIn Successfully", userID.ToString(), userRole);
                 }
@@ -51,15 +55,15 @@ namespace VShow_BackEnd.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpPost("Upload")]
         public IActionResult Upload(IFormFile file,string SetPath)
         {
             try
             {
 
-                bool Ex = UploadFile.Upload(file, SetPath);
-                if (Ex)
+                string Ex = UploadFile.Upload(file, SetPath);
+                if (Ex != null)
                 {
                     return Ok("Upload Successfully");
                 }
@@ -71,7 +75,7 @@ namespace VShow_BackEnd.Controllers
             }
         }
 
-        ////[Authorize]
+        //[Authorize]
         //[HttpGet("/hash")]
         //public IActionResult Test(string pass)
         //{

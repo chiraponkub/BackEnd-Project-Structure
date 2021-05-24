@@ -10,6 +10,7 @@ using System.Linq;
 using VShow_BackEnd.Configs;
 using VShow_BackEnd.Hubs;
 using VShow_BackEnd.Middlewares;
+using VShow_BackEnd.Models.Account;
 using VShow_CoreLibs;
 
 namespace VShow_BackEnd
@@ -23,6 +24,8 @@ namespace VShow_BackEnd
 
         public IConfiguration Configuration { get; }
 
+        public bool IsDevelopment() { return Configuration.GetValue("Environment", "Development").Equals("Development"); }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -30,6 +33,7 @@ namespace VShow_BackEnd
             services.AddControllers().AddJsonOptions(m => m.JsonSerializerOptions.PropertyNamingPolicy = null);
             services.AddAuthenticationHelper();
             services.AddSwaggerGenHelper(Configuration);
+            services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
             services.ConfigureLibraries(Configuration);
             services.Configure<FormOptions>(options =>
             {
@@ -56,11 +60,11 @@ namespace VShow_BackEnd
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                Path.Combine(env.ContentRootPath, "wwwroot"))
-            });
+            //app.UseStaticFiles(new StaticFileOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(
+            //    Path.Combine(env.ContentRootPath, "wwwroot"))
+            //});
             app.UseMiddleware<ExceptionMiddleware>();
             app.UseAuthentication();
             app.UseAuthorization();

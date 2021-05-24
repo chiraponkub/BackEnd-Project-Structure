@@ -17,7 +17,7 @@ namespace VShow_CoreLibs.Services.Upload
         /// <param name="file"></param>
         /// <param name="SetPath"></param>
         /// <returns></returns>
-        public static bool Upload(IFormFile file, string SetPath)
+        public static string Upload(IFormFile file, string SetPath)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace VShow_CoreLibs.Services.Upload
                 {
                     fileStream.Position = 0;
                     file.CopyTo(fileStream);
-                    return true;
+                    return NewName + "." + Splittype[type];
                 }
             }
             catch (Exception ex)

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using VShow_CoreLibs.Entity.Tables;
 
 namespace VShow_BackEnd.Entity
 {
@@ -25,7 +26,51 @@ namespace VShow_BackEnd.Entity
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region Tables
+            modelBuilder.HasAnnotation("Relational:Collation", "Thai_CI_AS");
 
+            modelBuilder.Entity<AccountProvider>(entity =>
+            {
+                entity.HasKey(e => e.AccId)
+                    .HasName("PK__tmp_ms_x__91CBC378559E4330");
+
+                entity.Property(e => e.CreateDate).HasColumnType("datetime");
+
+                entity.Property(e => e.HashPassword).HasMaxLength(500);
+
+                entity.Property(e => e.ProviderKey).HasMaxLength(128);
+
+                entity.Property(e => e.ProviderType)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+
+                entity.Property(e => e.Username).HasMaxLength(100);
+            });
+
+            modelBuilder.Entity<UserProfile>(entity =>
+            {
+                entity.HasKey(e => e.UserId)
+                    .HasName("PK__tmp_ms_x__1788CC4C473B3AF2");
+
+                entity.Property(e => e.CreateDate).HasColumnType("datetime");
+
+                entity.Property(e => e.Email).HasMaxLength(250);
+
+                entity.Property(e => e.FirstName).HasMaxLength(250);
+
+                entity.Property(e => e.Image).HasMaxLength(20);
+
+                entity.Property(e => e.LastName).HasMaxLength(250);
+
+                entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+
+                entity.Property(e => e.UserRole)
+                    .HasMaxLength(30)
+                    .HasDefaultValueSql("('User')");
+
+                entity.Property(e => e.VerifyCode).HasMaxLength(50);
+            });
             #endregion
             #region Views
 

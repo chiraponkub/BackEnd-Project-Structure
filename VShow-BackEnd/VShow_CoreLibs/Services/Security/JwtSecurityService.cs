@@ -54,7 +54,7 @@ namespace VShow_BackEnd.Services.Security
             }
         }
 
-        public string GenerateJWTAuthentication(string id, string role, int minute = 20)
+        public string GenerateJWTAuthentication(string id, string role, int minute = 120)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SECRET_KEY));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);

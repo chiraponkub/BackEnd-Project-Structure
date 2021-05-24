@@ -1,11 +1,12 @@
-C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.AssemblyInfoInputs.cache
-C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.AssemblyInfo.cs
-C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.csproj.CoreCompileInputs.cache
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\bin\Debug\net5.0\VShow_CoreLibs.deps.json
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\bin\Debug\net5.0\VShow_CoreLibs.dll
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\bin\Debug\net5.0\ref\VShow_CoreLibs.dll
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\bin\Debug\net5.0\VShow_CoreLibs.pdb
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.AssemblyInfoInputs.cache
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.AssemblyInfo.cs
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.csproj.CoreCompileInputs.cache
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.dll
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\ref\VShow_CoreLibs.dll
 C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.pdb
+C:\Users\Avesta\source\repos\VShow-BackEnd\VShow-BackEnd\VShow_CoreLibs\obj\Debug\net5.0\VShow_CoreLibs.csprojAssemblyReference.cache
